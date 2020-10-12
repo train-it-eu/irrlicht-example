@@ -87,4 +87,4 @@ You can try to use your own development environment for this workshop but in suc
 
 5. Build the project.
 
-6. Run the example app.
+6. Run the example app (choose "Software Renderer" in case of a Docker container usage).
