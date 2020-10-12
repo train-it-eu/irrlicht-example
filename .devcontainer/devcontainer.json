@@ -1,11 +1,7 @@
 {
 	"name": "Irrlicht Example",
 	"build": {
-		"dockerfile": "Dockerfile",
-		// Update 'VARIANT' to pick an Ubuntu version: focal, bionic
-		"args": {
-			"VARIANT": "focal"
-		}
+		"dockerfile": "Dockerfile"
 	},
 	"runArgs": [
 		"--cap-add=SYS_PTRACE",
