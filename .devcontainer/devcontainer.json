@@ -17,7 +17,11 @@
 		"ms-vscode.cpptools",
 		"ms-vscode.cmake-tools",
 		"twxs.cmake"
-	]
+	],
+	// Set DISPLAY forwarding
+	"remoteEnv": {
+		"DISPLAY": "host.docker.internal:0"
+	}
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
