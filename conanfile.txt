@@ -1,0 +1,9 @@
+[requires]
+irrlicht/1.8.4@mpusz/testing
+
+[generators]
+cmake
+
+[imports]
+bin, *.dll -> ./bin
+lib, *.dylib* -> ./bin
