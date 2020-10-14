@@ -76,33 +76,12 @@ You can try to use your own development environment for this workshop but in suc
 
 2. Wait a moment for the container to initialize.
 
-3. After opening the project in the container the VSCode will ask which toolchain to use for CMake. Please do
-  not make any choice yet.
-
-4. Press `Ctrl + P`, select "CMake: Edit User-Local CMake Kits", and add "toolchainFile" as follows to GCC
-  configurations:
-
-    ```json
-      {
-        "name": "GCC 10.2.0",
-        "toolchainFile": "/root/cmake/toolchains/warnings_gcc.cmake",
-        "compilers": {
-          "C": "/bin/gcc-10",
-          "CXX": "/bin/g++-10"
-        }
-      },
-    ```
-
-    Provide the similar for Clang if needed using `warnings_clang.cmake`.
-
-5. Select the latest GCC toolchain.
-
-6. The project will fail to compile because of unmet [Conan package manager](https://conan.io) dependencies.
+3. The project will fail to compile because of unmet [Conan package manager](https://conan.io) dependencies.
     Switch to `TERMINAL` tab in VSCode (click `+` to open a new bash shell if needed). In the new shell please
     type the following:
     - `cd build/<your_cmake_toolchain>`
     - `conan install ../..`
 
-7. Build the project.
+4. Build the project.
 
-8. Run the example app (choose "Software Renderer" in case of a Docker container usage).
+5. Run the example app (choose "Software Renderer" in case of a Docker container usage).
