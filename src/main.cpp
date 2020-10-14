@@ -139,7 +139,7 @@ public:
 
   virtual u32 getMaterialCount() const { return 1; }
 
-  virtual video::SMaterial& getMaterial(u32 i) { return Material; }
+  virtual video::SMaterial& getMaterial(u32) { return Material; }
 };
 
 /*
@@ -224,7 +224,7 @@ int main()
       core::stringw str = L"Irrlicht Engine [";
       str += driver->getName();
       str += L"] FPS: ";
-      str += (s32)driver->getFPS();
+      str += static_cast<s32>(driver->getFPS());
 
       device->setWindowCaption(str.c_str());
       frames = 0;
