@@ -16,7 +16,7 @@ AccessModifierOffset: -2
 # AllowShortBlocksOnASingleLine: Never
 # AllowShortCaseLabelsOnASingleLine: false
 # AllowShortFunctionsOnASingleLine: All
-# AllowShortIfStatementsOnASingleLine: WithoutElse
+AllowShortIfStatementsOnASingleLine: Never
 # AllowShortLambdasOnASingleLine: All
 # AllowShortLoopsOnASingleLine: true
 # AlwaysBreakAfterDefinitionReturnType: None
