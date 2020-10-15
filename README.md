@@ -76,13 +76,13 @@ You can try to use your own development environment for this workshop but in suc
 
 2. Wait a moment for the container to initialize.
 
-3. Select the latest GCC toolchain in VSCode.
+3. Select CMake Kit for the latest GCC toolchain in VSCode.
 
 4. The project will fail to compile because of unmet [Conan package manager](https://conan.io) dependencies.
     Switch to `TERMINAL` tab in VSCode (click `+` to open a new bash shell if needed). In the new shell please
     type the following:
-    - `cd build/<your_cmake_toolchain>`
-    - `conan install ../..`
+    - `cd build`
+    - `conan install ..`
 
 5. Build the project.
 
