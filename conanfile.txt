@@ -1,8 +1,12 @@
 [requires]
 irrlicht/1.8.4@mpusz/testing
 
+[layout]
+cmake_layout
+
 [generators]
-cmake
+CMakeDeps
+CMakeToolchain
 
 [imports]
 bin, *.dll -> ./bin

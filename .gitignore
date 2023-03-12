@@ -29,13 +29,20 @@
 *.app
 
 # IDE-specific
-.idea/
-.vscode/
+/.idea/
+/.vs/
+/.vscode/
+/CMakeSettings.json
 
 # build artifacts
 /cmake-build-*/
 /build/
-/test_package/build/
+/out/
+_build/
+
+# CMake
+CMakeUserPresets.json
 
 # Conan
 *.pyc
+/test_package/build/

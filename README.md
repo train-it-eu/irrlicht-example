@@ -9,7 +9,7 @@ provides gcc, clang, CMake, Ninja, debuggers, clang-format, pre-configured [Cona
 and more...
 
 To install [Docker](https://www.docker.com) please follow the point #1 of a detailed installation instruction in
-[Developing inside a Container](https://code.visualstudio.com/docs/remote/containers#_installation) section of VSCode
+[Developing inside a Container](https://code.visualstudio.com/docs/devcontainers/containers#_installation) section of VSCode
 documentation.
 
 _Note:_ [WSL 2](https://docs.microsoft.com/en-us/windows/wsl) improves the performance of [Docker](https://www.docker.com)
@@ -76,14 +76,16 @@ You can try to use your own development environment for this workshop but in suc
 
 2. Wait a moment for the container to initialize.
 
-3. Select CMake Kit for the latest GCC toolchain in VSCode.
+3. In order to install the dependencies with [Conan package manager](https://conan.io) open the `TERMINAL`
+   tab in VSCode (click `+` to open a new bash shell if needed). In the new shell type the following:
+    - `conan install . -pr gcc12 -b missing`
 
-4. The project will fail to compile because of unmet [Conan package manager](https://conan.io) dependencies.
-    Switch to `TERMINAL` tab in VSCode (click `+` to open a new bash shell if needed). In the new shell please
-    type the following:
-    - `cd build`
-    - `conan install ..`
+4. After the dependencies are built select CMake configure and build presets in VSCode status bar
+   (please use the `conan-gcc-12-release` version unless you will install debug dependencies with Conan as well).
+    - in case a preset will not visible in the VSCode IDE use the "CMake: Reset CMake Tools Extension State"
+      command
 
-5. Build the project.
+5. Build the release version of the project.
 
-6. Run the example app (choose "Software Renderer" in case of a Docker container usage).
+6. Run the example app (choose "Software Renderer" in case of a Docker container usage). Ensure that a spinning
+   triangle is being displayed in you XServer window.

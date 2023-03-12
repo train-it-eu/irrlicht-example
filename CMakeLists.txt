@@ -24,14 +24,12 @@
 cmake_minimum_required(VERSION 3.8)
 project(irrlicht_example)
 
-include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
-conan_basic_setup(TARGETS)
+find_package(irrlicht CONFIG REQUIRED)
 
 add_executable(example
   src/main.cpp
 )
-target_compile_features(example PUBLIC cxx_std_20)
 target_link_libraries(example
   PRIVATE
-    CONAN_PKG::irrlicht
+    irrlicht::irrlicht
 )
