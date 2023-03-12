@@ -7,7 +7,3 @@ cmake_layout
 [generators]
 CMakeDeps
 CMakeToolchain
-
-[imports]
-bin, *.dll -> ./bin
-lib, *.dylib* -> ./bin
