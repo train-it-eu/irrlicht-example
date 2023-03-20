@@ -56,8 +56,9 @@ Make sure to enable at least the following extensions:
 
 You can try to use your own development environment for this workshop but in such a case please make sure that you:
 - have a C++20-ready compiler,
+- installed recent version of [CMake](https://cmake.org/download)
 - installed [Conan package manager](https://conan.io) and provided a profile for your compiler
-- [Windows only] installed [DirectX SDK](https://www.microsoft.com/en-us/download/details.aspx?id=6812)
+- [Windows only] [optional] installed [DirectX SDK](https://www.microsoft.com/en-us/download/details.aspx?id=6812)
 - can compile and run the provided example.
 
 
